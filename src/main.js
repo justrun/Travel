@@ -6,9 +6,11 @@ import router from './router'
 // 300ms延迟解决
 // Travel$ npm install fastclick --save
 import fastClick from 'fastclick'
-import './assets/styles/reset.css'
+// import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 处理1px 1像素边框
-import './assets/styles/border.css'
+import 'styles/border.css'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
