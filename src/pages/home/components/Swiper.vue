@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption" :not-next-tick="notNextTick" ref="mySwiper">
+    <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
       <swiper-slide v-for="item of swiperList" :key="item.id">
         <img :src="item.imgUrl"
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "HomeSwiper",
+  name: 'HomeSwiper',
   data () {
     return {
       swiperOption: {
