@@ -37,6 +37,7 @@ export default {
   .wrapper >>> .swiper-pagination-bullet-active //样式穿透 不受scoped限制
     background : #fff
   .wrapper
+    touch-action: none
     overflow: hidden
     width: 100%
     height: 0
