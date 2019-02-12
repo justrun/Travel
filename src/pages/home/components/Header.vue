@@ -8,7 +8,7 @@
       输入城市/景点/游玩主题</div>
     <router-link to="/city">
       <div class="header-right">
-        <span class="city">{{this.city}}</span>
+        <span class="city">{{city}}</span>
         <span class="iconfont arrow-icon">&#xe615;</span>
       </div>
     </router-link>
@@ -16,10 +16,11 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
-  props: {
-    city: String
+  computed: {
+    ...mapState(['city']) // 可以直接使用city而无需{{this.$store.state.city}}
   }
 }
 </script>
@@ -52,7 +53,8 @@ export default {
       border-radius: .1rem
       color : #cccccc
     .header-right
-      width: 1.24rem
+      min-width: 1.04rem
+      padding: 0 .1rem
       float: right
       text-align : center
       font-size : 0

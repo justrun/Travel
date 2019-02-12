@@ -9,6 +9,7 @@
           class="search-item border-bottom"
           v-for="item of list"
           :key="item.id"
+          @click="handleCityClick(item.name)"
         >
           {{item.name}}
         </li>
@@ -63,7 +64,10 @@ export default {
     }
   },
   methods: {
-
+    handleCityClick (city) {
+      this.$store.dispatch('changeCity', city)
+      this.$router.push('/') // 路由跳转的另一种方法：编程式导航
+    }
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.search)

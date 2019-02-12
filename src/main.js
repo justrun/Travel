@@ -8,6 +8,7 @@ import router from './router'
 import fastClick from 'fastclick'
 // 轮播组件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import store from './store'
 // import './assets/styles/reset.css'
 import 'styles/reset.css'
 // 处理1px 1像素边框
@@ -24,6 +25,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
