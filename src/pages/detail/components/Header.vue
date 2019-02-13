@@ -51,6 +51,9 @@ export default {
   },
   activated () { //用了keepalive 页面一旦被展示 activated即被执行
     window.addEventListener('scroll',this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListener('scroll',this.handleScroll)
   }
 }
 </script>
