@@ -22,6 +22,6 @@ export default new Router({
   }],
   // 每次进入一个路由页面 均滚动在初始位置 避免sap应用不同场景的滚动相互干扰
   scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0}
+    return {x: 0, y: 0}
   }
 })
