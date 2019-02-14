@@ -50,7 +50,7 @@ export default {
         this.bannerImg = data.bannerImg
         this.gallaryImgs = data.gallaryImgs
         this.list = data.categoryList
-        console.log(data)
+        // console.log(data)
       }
     }
   },

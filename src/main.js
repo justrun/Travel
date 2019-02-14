@@ -8,6 +8,8 @@ import router from './router'
 import fastClick from 'fastclick'
 // 轮播组件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+// 低端浏览器内核版本太低，不支持es6等promise等新语法，此句增加支持所有es6的新方法
+import 'babel-polyfill'
 import store from './store'
 // import './assets/styles/reset.css'
 import 'styles/reset.css'
